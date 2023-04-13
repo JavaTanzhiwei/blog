@@ -30,18 +30,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         nav: [
             {text: '首页', link: '/'},
             {
-                text: '项目',
-                link: '/project/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+                text: '后端',
+                link: '/java/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
                 items: [
                     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-                    {
-                        text: '公司缩写',
-                        items: [
-                            {text: 'NJCT', link: '/pages/906880/'},
-                            {text: 'NJJX', link: '/pages/115bee/'},
-                            {text: 'NJSTT', link: '/pages/e69768/'},
-                        ],
-                    }
+                    {text: '设计模式', link: '/pages/edd06f/'},
+                ],
+            },
+            {
+                text: '服务器搭建',
+                link: '/java/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+                items: [
+                    // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+                    {text: '运行环境', link: '/pages/9b524b/'},
                 ],
             },
             {
