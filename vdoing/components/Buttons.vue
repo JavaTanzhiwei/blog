@@ -83,8 +83,6 @@ export default {
       _scrollTimer: null,
       _textareaEl: null,
       _recordScrollTop: null,
-      COMMENT_SELECTOR_1: '#vuepress-plugin-comment', // 评论区元素的选择器1
-      COMMENT_SELECTOR_2: '#valine-vuepress-comment', // 评论区元素的选择器2
       COMMENT_SELECTOR_3: '.vssue' // 评论区元素的选择器3
     }
   },
@@ -151,7 +149,7 @@ export default {
 
     getCommentTop () {
       setTimeout(() => {
-        let commentEl = document.querySelector(this.COMMENT_SELECTOR_1) || document.querySelector(this.COMMENT_SELECTOR_2) || document.querySelector(this.COMMENT_SELECTOR_3)
+        let commentEl =  document.querySelector(this.COMMENT_SELECTOR_3)
         if (commentEl) {
           this.showCommentBut = this.$frontmatter.comment !== false && this.$frontmatter.home !== true
           this.commentTop = commentEl.offsetTop - 58

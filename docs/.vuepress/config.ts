@@ -139,7 +139,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
         docsDir: 'docs', // 编辑的文件夹
         // docsBranch: 'master', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
-        editLinks: true, // 启用编辑
+        editLinks: false, // 启用编辑
         editLinkText: '编辑',
 
         //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
@@ -218,7 +218,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         footer: {
             createYear: 2018, // 博客创建年份
             copyrightInfo:
-                'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+                '<a href="https://gitee.com/JavaTanzhiwei" target="_blank">JavaTanzhiwei</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
         },
 
         // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
@@ -231,7 +231,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },
 
     // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    head: [
+    /*head: [
         ['link', {rel: 'icon', href: '/img/favicon.ico'}], //favicons，资源放在public文件夹
         [
             'meta',
@@ -250,7 +250,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
         //   },
         // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
-    ],
+    ],*/
 
 
     // 插件配置
@@ -261,9 +261,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 hostname: WEB_SITE,
             },
         ],
-
-        'vuepress-plugin-baidu-autopush', // 百度自动推送
-
         [
             'vuepress-plugin-baidu-tongji', // 百度统计
             {
@@ -279,19 +276,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             'thirdparty-search',
             {
                 thirdparty: [
-                    {
-                        title: '在MDN中搜索',
-                        frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-                        behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
-                    },
-                    {
-                        title: '在Runoob中搜索',
-                        frontUrl: 'https://www.runoob.com/?s=',
-                    },
-                    {
-                        title: '在Vue API中搜索',
-                        frontUrl: 'https://cn.vuejs.org/v2/api/#',
-                    },
                     {
                         title: '在Bing中搜索',
                         frontUrl: 'https://cn.bing.com/search?q=',
@@ -313,46 +297,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 showInMobile: false, // whether to display on the mobile side, default: false.
             },
         ],
-
-        [
-            'demo-block', // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
-            {
-                settings: {
-                    // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
-                    // cssLib: ['http://xxx'], // 在线示例中的css依赖
-                    // vue: 'https://fastly.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
-                    jsfiddle: false, // 是否显示 jsfiddle 链接
-                    codepen: true, // 是否显示 codepen 链接
-                    horizontal: false, // 是否展示为横向样式
-                },
-            },
-        ],
         [
             'vuepress-plugin-zooming', // 放大图片
             {
                 selector: '.theme-vdoing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
                 options: {
                     bgColor: 'rgba(0,0,0,0.6)',
-                },
-            },
-        ],
-        [
-            'vuepress-plugin-comment', // 评论
-            {
-                choosen: 'gitalk',
-                options: {
-                    clientID: 'a6e1355287947096b88b',
-                    clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-                    repo: 'blog-gitalk-comment', // GitHub 仓库
-                    owner: 'xugaoyi', // GitHub仓库所有者
-                    admin: ['xugaoyi'], // 对仓库有写权限的人
-                    // distractionFreeMode: true,
-                    pagerDirection: 'last', // 'first'正序 | 'last'倒序
-                    id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-                    title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-                    labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-                    body:
-                        '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
                 },
             },
         ],
