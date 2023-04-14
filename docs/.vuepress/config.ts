@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         '/': {
             lang: 'zh-CN',
             title: "JavaTanzhiwei",
-            description: '知道的越多，不懂的也越多',
+            description: '🦁知道的越多，不懂的也越多',
         }
     },
     // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -29,7 +29,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         nav: [
             {text: '首页', link: '/'},
             {
-                text: '🚀后端',
+                text: '🌴后端',
                 link: '/java/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
                 items: [
                     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
@@ -42,7 +42,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                     {
                         text: '',
                         items: [
-                            {text: '🚀运行环境', link: '/note/server/'},
+                            {text: '🛸运行环境', link: '/note/server/'},
                         ],
                     },
                 ],
