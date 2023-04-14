@@ -6,7 +6,6 @@ import {defineConfig4CustomTheme, UserPlugins} from 'vuepress/config'
 import {VdoingThemeConfig} from 'vuepress-theme-vdoing/types'
 // @ts-ignore
 import dayjs from 'dayjs'
-import baiduCode from './config/baiduCode' // 百度统计hm码
 
 const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
@@ -34,16 +33,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 link: '/java/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
                 items: [
                     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-                    {text: 'Java设计模式', link: '/pages/edd06f/'},
-                    {text: '运行环境', link: '/note/server/'},
-                ],
-            },
-            {
-                text: '服务器搭建',
-                link: '/java/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-                items: [
-                    // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-                    {text: '运行环境', link: '/note/server/'},
+                    {
+                        text: '',
+                        items: [
+                            {text: '🚀Java设计模式', link: '/pages/edd06f/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
+                            {text: '🚀运行环境', link: '/note/server/'},
+                        ],
+                    },
                 ],
             },
             {
@@ -233,26 +234,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },
 
     // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    /*head: [
+    head: [
         ['link', {rel: 'icon', href: '/img/favicon.ico'}], //favicons，资源放在public文件夹
         [
             'meta',
             {
                 name: 'keywords',
-                content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+                content: '个人技术博客,后端,后端开发',
             },
-        ],
-        ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}], // 百度统计的站长验证（你可以去掉）
-        ['meta', {name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
-        // [
-        //   'script',
-        //   {
-        //     'data-ad-client': 'ca-pub-7828333725993554',
-        //     async: 'async',
-        //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-        //   },
-        // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
-    ],*/
+        ]
+    ],
 
 
     // 插件配置
@@ -261,12 +252,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             "sitemap", // 网站地图
             {
                 hostname: WEB_SITE,
-            },
-        ],
-        [
-            'vuepress-plugin-baidu-tongji', // 百度统计
-            {
-                hm: baiduCode,
             },
         ],
 
