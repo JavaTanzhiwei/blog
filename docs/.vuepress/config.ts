@@ -48,7 +48,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 ],
             },
             {
-                text: '🦁 随笔',
+                text: '🐼 随笔',
                 link: '/essay/',
                 items: [
                     {
@@ -60,7 +60,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 ],
             },
             {
-                text: '🐧 索引',
+                text: '🐸 索引',
                 link: '/archives/',
                 items: [
                     {text: '🚀 分类', link: '/categories/'},
