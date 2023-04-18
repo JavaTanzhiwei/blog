@@ -36,27 +36,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                     {
                         text: '',
                         items: [
-                            {text: '🚀 Java设计模式', link: '/pages/edd06f/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
                             {text: '🛸 运行环境', link: '/note/server/'},
                         ],
                     },
-                ],
-            },
-            {
-                text: '🐼 随笔',
-                link: '/essay/',
-                items: [
                     {
                         text: '',
                         items: [
-                            {text: '🚀 初次使用vuepress-theme-vdoing', link: '/pages/edd06f/'},
+                            {text: '🚀 系统设计', link: '/note/system/'},
                         ],
                     },
+
                 ],
             },
             {
