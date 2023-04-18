@@ -33,60 +33,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 link: '/java/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
                 items: [
                     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-                    {
-                        text: '',
-                        items: [
-                            {text: '🚀 java', link: '/note/java/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🛸 计算机基础', link: '/note/foundation/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🚀 数据库', link: '/note/database/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🛸 常用框架', link: '/note/framework/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🚀 系统设计', link: '/note/system/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🛸 分布式', link: '/note/distributed/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🚀 高性能', link: '/note/performance/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🛸 高可用', link: '/note/available/'},
-                        ],
-                    },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🚀 运行环境', link: '/note/server/'},
-                        ],
-                    },
+                    {text: '🚀 java', link: '/note/java/'},
+                    {text: '🛸 计算机基础', link: '/note/foundation/'},
+                    {text: '🚀 数据库', link: '/note/database/'},
+                    {text: '🛸 常用框架', link: '/note/framework/'},
+                    {text: '🚀 系统设计', link: '/note/system/'},
+                    {text: '🛸 分布式', link: '/note/distributed/'},
+                    {text: '🚀 高性能', link: '/note/performance/'},
+                    {text: '🛸 高可用', link: '/note/available/'},
+                    {text: '🚀 运行环境', link: '/note/server/'}
                 ],
             },
             {
