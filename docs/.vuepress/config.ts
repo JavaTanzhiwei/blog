@@ -87,12 +87,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                             {text: '🛸 高可用', link: '/note/available/'},
                         ],
                     },
-                    {
-                        text: '',
-                        items: [
-                            {text: '🛸 系统设计', link: '/note/system/'},
-                        ],
-                    },
                 ],
             },
             {
