@@ -42,10 +42,57 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                     {
                         text: '',
                         items: [
+                            {text: '🚀 java', link: '/note/java/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
+                            {text: '🛸 计算机基础', link: '/note/foundation/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
+                            {text: '🚀 数据库', link: '/note/database/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
+                            {text: '🛸 常用框架', link: '/note/framework/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
                             {text: '🚀 系统设计', link: '/note/system/'},
                         ],
                     },
-
+                    {
+                        text: '',
+                        items: [
+                            {text: '🛸 分布式', link: '/note/distributed/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
+                            {text: '🚀 高性能', link: '/note/performance/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
+                            {text: '🛸 高可用', link: '/note/available/'},
+                        ],
+                    },
+                    {
+                        text: '',
+                        items: [
+                            {text: '🛸 系统设计', link: '/note/system/'},
+                        ],
+                    },
                 ],
             },
             {
