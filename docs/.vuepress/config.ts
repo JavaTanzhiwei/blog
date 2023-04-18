@@ -7,7 +7,7 @@ import {VdoingThemeConfig} from 'vuepress-theme-vdoing/types'
 // @ts-ignore
 import dayjs from 'dayjs'
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'javatanzhiwei.gitee.io' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
