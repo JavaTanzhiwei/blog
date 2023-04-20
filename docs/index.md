@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/smile.png
 heroText: JavaTanzhiwei
-tagline: 好记性不如烂笔头
+tagline: 善人则亲近之，助德行于身心；恶人则远避之，杜灾殃于眉睫
 # actionText: 立刻进入 →
 # actionLink: /web/
 bannerBg: /img/home.jpg # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量

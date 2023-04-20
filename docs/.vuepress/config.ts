@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         '/': {
             lang: 'zh-CN',
             title: "JavaTanzhiwei",
-            description: '好记性不如烂笔头',
+            description: '善人则亲近之，助德行于身心；恶人则远避之，杜灾殃于眉睫',
         }
     },
     base: '/blog/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
